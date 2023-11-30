@@ -2,6 +2,10 @@
   "name": "@northvolt/source",
   "version": "0.0.0",
   "license": "MIT",
+  "engines": {
+    "node": "^20.10.0",
+    "npm": "^10.2.0"
+  },
   "scripts": {
     "nx": "node --max-old-space-size=8192 ./node_modules/nx/bin/nx",
     "start": "npm run start-client",
