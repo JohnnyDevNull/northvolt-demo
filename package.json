@@ -24,7 +24,9 @@
     "cleanup": "npm run cleanup-dist && npm run cleanup-ng && npm run cleanup-nx",
     "cleanup-dist": "shx rm -rf ./dist",
     "cleanup-ng": "shx rm -rf ./.angular",
-    "cleanup-nx": "nx reset"
+    "cleanup-nx": "nx reset",
+    "docker:up": "docker-compose up -d",
+    "docker:down": "docker-compose down"
   },
   "private": true,
   "dependencies": {

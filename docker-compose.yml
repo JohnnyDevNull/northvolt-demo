@@ -1,0 +1,36 @@
+version: "3.8"
+
+services:
+  db:
+    container_name: "nvd-db"
+    image: "postgres:15-alpine"
+    restart: "always"
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: "nvd"
+      POSTGRES_PASSWORD: "super$Secret=2023!"
+    volumes:
+      - "nvd-db-volume:/var/lib/postgresql/data"
+    networks:
+      - nvd
+  db-e2e:
+    container_name: "nvd-db-e2e"
+    image: "postgres:15-alpine"
+    restart: "always"
+    ports:
+      - "5433:5432"
+    environment:
+      POSTGRES_USER: "nvd_e2e"
+      POSTGRES_PASSWORD: "super$Secret=2023!"
+    volumes:
+      - "nvd-db-volume-e2e:/var/lib/postgresql/data"
+    networks:
+      - nvd
+
+volumes:
+  nvd-db-volume:
+  nvd-db-volume-e2e:
+
+networks:
+  nvd:
