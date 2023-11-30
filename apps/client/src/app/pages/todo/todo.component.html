@@ -1,0 +1,15 @@
+<h3>ToDo-List</h3>
+<div *ngIf="todoList$ | async as todoList">
+  <ul>
+    <li *ngFor="let todo of todoList">
+      <span>{{ todo.text }}</span>
+      <button class="ml-sm" (click)="onDone(todo.id)" [disabled]="todo.done">Done</button>
+      <button class="ml-sm" (click)="onDelete(todo.id)">Delete</button>
+      <span class="ml-sm" *ngIf="todo.done">Done at: {{ todo.doneAt | date:'medium' }}</span>
+    </li>
+  </ul>
+</div>
+<div>
+  <input type="text" #todoInput>
+  <button class="ml-sm" (click)="onAddTodo()">Add</button>
+</div>
