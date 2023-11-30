@@ -19,5 +19,6 @@
         "lintFilePatterns": ["apps/server-e2e/**/*.{js,ts}"]
       }
     }
-  }
+  },
+  "tags": ["scope:server"]
 }
