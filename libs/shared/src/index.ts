@@ -1,1 +1,1 @@
-export * from './lib/shared';
+export * from './lib/interfaces/server-response.interface';
