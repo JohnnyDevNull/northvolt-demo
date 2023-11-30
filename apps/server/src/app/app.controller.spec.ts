@@ -14,9 +14,9 @@ describe('AppController', () => {
   });
 
   describe('getData', () => {
-    it('should return "Hello API"', () => {
+    it('should return "The API is online!"', () => {
       const appController = app.get<AppController>(AppController);
-      expect(appController.getData()).toEqual({ message: 'Hello API' });
+      expect(appController.getData()).toEqual({ message: 'The API is online!' });
     });
   });
 });
