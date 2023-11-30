@@ -9,7 +9,7 @@ services:
       - "5432:5432"
     environment:
       POSTGRES_USER: "nvd"
-      POSTGRES_PASSWORD: "super$Secret=2023!"
+      POSTGRES_PASSWORD: "superSecret2023"
     volumes:
       - "nvd-db-volume:/var/lib/postgresql/data"
     networks:
@@ -22,7 +22,7 @@ services:
       - "5433:5432"
     environment:
       POSTGRES_USER: "nvd_e2e"
-      POSTGRES_PASSWORD: "super$Secret=2023!"
+      POSTGRES_PASSWORD: "superSecret2023"
     volumes:
       - "nvd-db-volume-e2e:/var/lib/postgresql/data"
     networks:
