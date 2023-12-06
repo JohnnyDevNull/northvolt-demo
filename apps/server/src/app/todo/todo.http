@@ -1,0 +1,25 @@
+### Get Todo List
+GET http://localhost:3000/api/todo
+Content-Type: application/json
+
+### Create Todo
+POST http://localhost:3000/api/todo
+Content-Type: application/json
+
+{
+  "text": "This is my first Todo",
+  "done": false
+}
+
+### Create Todo
+PATCH http://localhost:3000/api/todo/2
+Content-Type: application/json
+
+{
+  "text": "This is my first Todo updated",
+  "done": false
+}
+
+### Delete Todo
+DELETE http://localhost:3000/api/todo/2
+Content-Type: application/json
