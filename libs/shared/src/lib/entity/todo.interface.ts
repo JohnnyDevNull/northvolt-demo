@@ -6,3 +6,5 @@ export interface ITodo {
   updatedAt: Date;
   doneAt: Date;
 }
+
+export type ITodoPartial = Partial<ITodo>;
