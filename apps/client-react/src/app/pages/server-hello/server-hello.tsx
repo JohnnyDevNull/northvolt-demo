@@ -1,5 +1,6 @@
 import { IServerResponse } from '@northvolt/shared';
 import { useEffect, useState } from 'react';
+import { getRequest } from '../../util/http-request.function';
 
 const initialServerMessageState: IServerResponse | null = null;
 const initialErrorState: string | null = null;
@@ -14,10 +15,9 @@ export default function ServerHello() {
    * similar to componentDidMount()
    */
   useEffect(() => {
-    fetch('/api')
-      .then(res => res.json())
-      .then((result: IServerResponse) => setServerMessage(result))
-      .catch((error: Error) => setError('Error while requesting API'));
+    getRequest<IServerResponse>({ path: null })
+      .then(result => setServerMessage(result))
+      .catch(() => setError('Error while requesting API'));
   }, []);
 
   return (
