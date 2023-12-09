@@ -1,4 +1,4 @@
-# Northvolt
+# Northvolt Demo
 
 <a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="45"></a>
 
@@ -7,21 +7,37 @@
 
 ## Applications
 
-### Client
+### Client (Angular)
 
 Source: [/apps/client/](/apps/client/)  
 
 Run: run `npm run start-client`. Open your browser and navigate to http://localhost:4200/.  
 Build: run `npm run build-client`. You will find the result here: `/dist/client`  
 Lint: run `npm run lint-client`.  
-Test: run `npm run test-client`.  
+Test: run `npm run test-client`.
 
-**E2E Tests** [/apps/client-e2e/](/apps/client-e2e/)
+E2E Tests [/apps/client-e2e/](/apps/client-e2e/)
 
 1. Start the Docker container: `npm run docker:up`
 2. Run the client: `npm run start-client`
 3. Run the server: `npm run start-server`
 4. Run the tests: `npm run e2e-client`
+
+### Client (React)
+
+Source: [/apps/client-react/](/apps/client-react/)
+
+Run: run `npm run start-client-react`. Open your browser and navigate to http://localhost:4200/.  
+Build: run `npm run build-client-react`. You will find the result here: `/dist/client-react`  
+Lint: run `npm run lint-client-react`.  
+Test: run `npm run test-client-react`.
+
+E2E Tests [/apps/client-e2e/](/apps/client-e2e/)
+
+1. Start the Docker container: `npm run docker:up`
+2. Run the client: `npm run start-client-react`
+3. Run the server: `npm run start-server`
+4. Run the tests: `npm run e2e-client-react`
 
 ### Server
 
@@ -29,14 +45,14 @@ Source: [/apps/server/](/apps/server/)
 
 Note: you need to start the Docker Container first to be able to work with the server:  
   * Start Docker: `npm run docker:up`  
-  * Stop Docker: `npm run docker:down`
+  * Stop Docker: `npm run docker:down`  
 
 Run: run `npm run start-server`. Open your rest client and request http://localhost:3000/api.  
 Build: run `npm run build-server`. You will find the result here: `/dist/server`  
 Lint: run `npm run lint-server`.  
 Test: run `npm run test-server`.  
 
-**E2E Tests** [/apps/server-e2e/](/apps/server-e2e/)
+E2E Tests [/apps/server-e2e/](/apps/server-e2e/)
 
 1. Start the Docker container: `npm run docker:up`
 2. Run the server: `npm run start-server`
