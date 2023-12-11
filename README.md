@@ -19,9 +19,8 @@ Test: run `npm run test-client`.
 E2E Tests [/apps/client-e2e/](/apps/client-e2e/)
 
 1. Start the Docker container: `npm run docker:up`
-2. Run the client: `npm run start-client`
-3. Run the server: `npm run start-server`
-4. Run the tests: `npm run e2e-client`
+2. Run the server: `npm run start-server`
+3. Run the tests: `npm run e2e-client`
 
 ### Client (React)
 
@@ -35,9 +34,8 @@ Test: run `npm run test-client-react`.
 E2E Tests [/apps/client-e2e/](/apps/client-e2e/)
 
 1. Start the Docker container: `npm run docker:up`
-2. Run the client: `npm run start-client-react`
-3. Run the server: `npm run start-server`
-4. Run the tests: `npm run e2e-client-react`
+2. Run the server: `npm run start-server`
+3. Run the tests: `npm run e2e-client-react`
 
 ### Server
 
