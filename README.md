@@ -31,7 +31,7 @@ Build: run `npm run build-client-react`. You will find the result here: `/dist/c
 Lint: run `npm run lint-client-react`.  
 Test: run `npm run test-client-react`.
 
-E2E Tests [/apps/client-e2e/](/apps/client-e2e/)
+E2E Tests [/apps/client-react-e2e/](/apps/client-react-e2e/)
 
 1. Start the Docker container: `npm run docker:up`
 2. Run the server: `npm run start-server`
